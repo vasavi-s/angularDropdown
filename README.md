@@ -1,4 +1,5 @@
 # Dropdown
+![image](https://user-images.githubusercontent.com/81638871/203577416-b4e055e0-bb22-4e15-9a3d-8fada6af5076.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
