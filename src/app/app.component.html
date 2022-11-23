@@ -1,0 +1,58 @@
+<div >
+  <h1>Choose picture based upon select option</h1>
+  <!-- Task 3 -->
+  <select #os>
+    <option>select</option>
+    <option value="win">Windows</option>
+    <option value="lin">Linux</option>
+    <option value="mac">Mac</option>
+    <option value="ubu">Ubunto</option>
+  </select>
+  <br><br>
+  <button type="submit" (click)="showMe(os.value)">Submit</button>
+</div>
+<div>
+  <p>Your are selected a <b>{{os.value}}</b> OS</p>
+  <p>LOGO for <b>{{os.value}}</b> OS: <br><br>
+    <img src="{{link}}" widht=100px height=200px alt="No images for select"></p>
+</div>
+<!-- Task 3 -->
+<!-- Task 2 -->
+<div>
+  <h1>Display Date & Time</h1>
+  <p><strong>Date: </strong>{{Date | date:'dd/MM/yyyy'}}<br><br>
+  {{Date | date:'MM-dd-yyyy'}}</p>
+  <p><strong>Time: </strong>{{Date | date: 'HH:mm:ss'}}<br><br>{{Date | date:'ss:mm:HH'}}</p>
+</div>
+<!-- Task 2 -->
+
+<!-- Task 4 -->
+<div>
+  <h1>Different format letter</h1>
+  <input type="text" name="num" [(ngModel)]="num">
+  <p>{{num | lowercase}}</p>
+  <p>{{num | uppercase}}</p>
+  <p>{{num | titlecase}}</p>
+</div>
+<!-- Task 4 -->
+
+<!-- Task 5 -->
+
+<div name="forms">
+  <h1>Registration Form</h1>
+  <form>
+    <label for="Firstname">Firstname: </label>
+    <input type="text" name="firstname"><br><br>
+    <label for="Lastname">Lastname: </label>
+    <input type="text"name="lastname"><br><br>
+    <label for="Email">E-mail:  </label>
+    <input type="email" name="email"><br><br>
+    <label for="Phonenumber">Phone Number: </label>
+    <input type="number" name="phonenumber"><br><br>
+  </form>
+  <select #country (click)="ShowState(country.value)">
+    <option value="IND">INDIA</option>
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+  </select>
+</div>
